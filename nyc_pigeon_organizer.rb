@@ -8,4 +8,5 @@ final_hash = data.each_with_object({}) do |(key, value), final_array|
     end
   end
 end
+final_hash
 end
