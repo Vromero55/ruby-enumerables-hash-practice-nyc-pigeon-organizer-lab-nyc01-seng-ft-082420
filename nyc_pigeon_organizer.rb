@@ -1,5 +1,5 @@
 def nyc_pigeon_organizer(data)
-  pigeon_list = {
+  data = {
     "Theo" => {
       :color => ["purple", "grey"],
       :gender => ["male"],
