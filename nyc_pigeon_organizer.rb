@@ -1,3 +1,3 @@
 def nyc_pigeon_organizer(data)
-  new_hash = {:Theo=>"value"}
+  new_hash = {"Theo"=>"value"}
 end
