@@ -7,4 +7,5 @@ final_hash = data.each_with_object({}) do |(key, value), final_array|
       final_array[name][key].push(innerkeys.to_s)
     end
   end
-end 
+end
+end
