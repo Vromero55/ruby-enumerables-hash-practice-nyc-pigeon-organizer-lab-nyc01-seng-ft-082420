@@ -1,12 +1,17 @@
 def nyc_pigeon_organizer(data)
-final_hash = data.each_with_object({}) do |(key, value), final_array|
-  value.each do |innerkeys, names|
-    names.each do |name|
-      final_array[name].uniq
-      final_array[name][key].uniq
-      final_array[name][key].push(innerkeys.to_s)
+  pigeon_list = {}
+  data.each do |color_gender_lives, value|
+    value.each do |stats, all_names|
+      all_names.each do |name|
+        if pigeon_list[name] == nil
+          pigeon_list[name] = {}
+        end
+        if pigeon_list[name][color_gender_lives] == nil
+          pigeon_list[name][color_gender_lives] = []
+        end
+        pigeon_list[name][color_gender_lives].push(stats.to_s)
+      end
     end
   end
-end
-final_hash
+  
 end
