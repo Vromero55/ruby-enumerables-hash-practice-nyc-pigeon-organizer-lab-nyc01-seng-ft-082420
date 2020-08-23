@@ -1,3 +1,3 @@
 def nyc_pigeon_organizer(data)
-  new_hash = {:data}
+  new_hash = {:key=>"value"}
 end
